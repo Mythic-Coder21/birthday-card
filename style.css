@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #B0E0E6, #9EC1D9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* MAIN CARD DESIGN */
+.card {
+    background: #ffffffcc;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1.5s ease;
+}
+
+.title {
+    color: #ff3f6c;
+    font-weight: 700;
+    text-shadow: 2px 2px #ffd1dc;
+}
+
+.date {
+    font-weight: 600;
+    color: #555;
+}
+
+.cake {
+    width: 100%;
+    border-radius: 12px;
+    margin: 15px 0;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+    animation: bounce 2s infinite;
+}
+
+/* LIST DESIGNS */
+
+.list {
+    text-align: left;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.list li {
+    padding: 6px 0;
+    font-size: 16px;
+}
+
+
+/* LINK DESIGNS */
+
+.map-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 20px;
+    background: #ff3f6c;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.map-link:hover {
+    background: #B0E0E6;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
